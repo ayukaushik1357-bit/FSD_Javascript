@@ -1,5 +1,24 @@
 const num = [1,2,3,4,5,6,7,8,9]
 
-const myNum = myNum.filter((num) => num>5)
+const myNum = num.filter((num) => num>5)
+console.log(myNum);
+
+const newNum = num.map( (num) => num+10);
 console.log(newNum);
 
+const chain = newNum
+              .map((num) => num*10)
+              .map((num) => num+1)
+              .filter((num) => num<150);
+console.log(chain);
+
+
+// Reduce :- mostly use for shopping cards
+const myArr = [1,2,3]
+const myTotal = myArr.reduce(function(acc, currval) {
+    console.log(`acc: ${acc} and currval: ${currval}`);
+    return acc + currval;
+}, 3)
+
+const myTotal1 = myArr.reduce( (acc, currval) => acc+currval, 3);
+console.log(myTotal1);
