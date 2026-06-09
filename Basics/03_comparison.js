@@ -12,8 +12,9 @@ console.log(null > 0);
 console.log(null == 0);
 console.log(null >= 0);
 
-console.log(undefines == 0);
+/*console.log(undefines == 0);
 console.log(undefines > 0);
-console.log(undefines < 0);
+console.log(undefines < 0);*/
 
+console.log("last");
 console.log("2" === 2);

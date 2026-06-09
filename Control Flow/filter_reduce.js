@@ -6,6 +6,12 @@ console.log(myNum);
 const newNum = num.map( (num) => num+10);
 console.log(newNum);
 
+myNum.forEach((num)=>{
+    if(num>5){
+        newNum.push(num);
+    }
+})
+
 const chain = newNum
               .map((num) => num*10)
               .map((num) => num+1)

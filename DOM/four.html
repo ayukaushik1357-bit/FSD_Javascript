@@ -12,38 +12,34 @@
 </body>
 
 <script>
-    function addLanguage(langName){
+    function addLanguage(lang){
         const li = document.createElement('li');
-        li.innerHTML = `${langName}`
+        li.innerHTML = `${lang}`
         document.querySelector('.language').appendChild(li)
     }
-    addLanguage("Python")
-    addLanguage("typescript")
+    addLanguage("python")
+    addLanguage("Kotlin")
 
     function addOptiLanguage(langName){
         const li = document.createElement('li');
-        li.appendChild(document.createTextNode(langName));
+        li.appendChild(document.createTextNode(langName))
         document.querySelector('.language').appendChild(li)
     }
-    addOptiLanguage("C++")
+    addOptiLanguage("Golang")
 
-
-    //Edit
+    //     EDIT
     const secondLang = document.querySelector("li:nth-child(2)")
-    //secondLang.innerHTML = "MOJO"
-    const newLi = document.createElement('li')
-    newLi.textContent = "MOJO"
-    secondLang.replaceWith(newLi)
+    //secondLang.innerHTML = "Mojo"
+    const newli = document.createElement('li')
+    newli.textContent = "Mojo"
+    secondLang.replaceWith(newli)
 
-    //Edit
-    const firstlang = document.querySelector(l="li:first-child")
-    firstlang.outerHTML = '<li>TypeScript</li>'
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML = "<li> TypeScript </li>"
 
-    //Remove
-    const lastlang = document.querySelector("li:last-child")
-    lastlang.remove()
 
-    
-
+    //  REMOVE
+    const lastLang = document.querySelector("li:last-child")
+    lastLang.remove();
 </script>
 </html>
