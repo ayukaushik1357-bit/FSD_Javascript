@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async code</title>
+</head>
+<body>
+    <h1>Ayush and code</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    /*setTimeout(function(){
+        console.log("Ayush")
+    },2000)*/
+
+    const sayName = function(){console.log("Ayush Kaushik")}
+    setTimeout(sayName,1000)
+
+    const change = function(){
+        document.querySelector('h1').
+        innerHTML = "Best Javascript series"
+    }
+    const changeMe = setTimeout(change,3000)
+
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(changeMe)
+        console.log("STOPPED")
+    })
+
+    const sayName1 = function(str){
+        console.log(str,Date.now())
+    }
+
+    const intervalId = setInterval(sayName1,2000,"Hii")
+
+    clearInterval(intervalId)
+</script>
+</html>
