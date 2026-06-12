@@ -1,4 +1,4 @@
-const promiseOne = new Promise(function(resolve,reject){
+/*const promiseOne = new Promise(function(resolve,reject){
     // DO async task
     // DB call, cryptography, network call
     setTimeout(function(){
@@ -88,4 +88,4 @@ async function getAllUsers() {
         console.log('E:',error)
     }
 }
-getAllUsers()
+getAllUsers()*/
